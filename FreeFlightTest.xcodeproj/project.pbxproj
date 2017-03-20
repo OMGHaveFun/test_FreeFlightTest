@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A20C3BBD1E7BCF35001BBDE9 /* FFTMapOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = A20C3BBC1E7BCF35001BBDE9 /* FFTMapOverlay.m */; };
+		A20C3BC01E7BCF59001BBDE9 /* FFTMapOverlayRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A20C3BBF1E7BCF59001BBDE9 /* FFTMapOverlayRenderer.m */; };
+		A23FB9311E7AB07A0081B4AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A23FB9301E7AB07A0081B4AC /* main.m */; };
+		A23FB9341E7AB07A0081B4AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A23FB9331E7AB07A0081B4AC /* AppDelegate.m */; };
+		A23FB93A1E7AB07A0081B4AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23FB9381E7AB07A0081B4AC /* Main.storyboard */; };
+		A23FB93C1E7AB07A0081B4AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A23FB93B1E7AB07A0081B4AC /* Assets.xcassets */; };
+		A23FB93F1E7AB07A0081B4AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23FB93D1E7AB07A0081B4AC /* LaunchScreen.storyboard */; };
+		A23FB94D1E7AB1780081B4AC /* FFTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A23FB94C1E7AB1780081B4AC /* FFTBaseViewController.m */; };
+		A23FB9511E7AB1AA0081B4AC /* FFTMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A23FB9501E7AB1AA0081B4AC /* FFTMapViewController.m */; };
+		A23FB9541E7AB2F20081B4AC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23FB9531E7AB2F20081B4AC /* MapKit.framework */; };
+		A23FB95A1E7ACDD80081B4AC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23FB9591E7ACDD80081B4AC /* CoreLocation.framework */; };
+		A23FB95E1E7AD0420081B4AC /* FFTHomeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A23FB95D1E7AD0420081B4AC /* FFTHomeAnnotation.m */; };
+		A2435FDB1E7D0E17004724CD /* FFTHomeAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2435FDA1E7D0E17004724CD /* FFTHomeAnnotationView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20C3BBB1E7BCF35001BBDE9 /* FFTMapOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTMapOverlay.h; sourceTree = "<group>"; };
+		A20C3BBC1E7BCF35001BBDE9 /* FFTMapOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTMapOverlay.m; sourceTree = "<group>"; };
+		A20C3BBE1E7BCF59001BBDE9 /* FFTMapOverlayRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTMapOverlayRenderer.h; sourceTree = "<group>"; };
+		A20C3BBF1E7BCF59001BBDE9 /* FFTMapOverlayRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTMapOverlayRenderer.m; sourceTree = "<group>"; };
+		A20C3BC21E7BD206001BBDE9 /* FFTConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFTConstants.h; sourceTree = "<group>"; };
+		A23FB92C1E7AB07A0081B4AC /* FreeFlightTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeFlightTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23FB9301E7AB07A0081B4AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A23FB9321E7AB07A0081B4AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A23FB9331E7AB07A0081B4AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A23FB9391E7AB07A0081B4AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A23FB93B1E7AB07A0081B4AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A23FB93E1E7AB07A0081B4AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A23FB9401E7AB07A0081B4AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A23FB94B1E7AB1780081B4AC /* FFTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTBaseViewController.h; sourceTree = "<group>"; };
+		A23FB94C1E7AB1780081B4AC /* FFTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTBaseViewController.m; sourceTree = "<group>"; };
+		A23FB94F1E7AB1AA0081B4AC /* FFTMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTMapViewController.h; sourceTree = "<group>"; };
+		A23FB9501E7AB1AA0081B4AC /* FFTMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTMapViewController.m; sourceTree = "<group>"; };
+		A23FB9531E7AB2F20081B4AC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A23FB9591E7ACDD80081B4AC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A23FB95C1E7AD0420081B4AC /* FFTHomeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTHomeAnnotation.h; sourceTree = "<group>"; };
+		A23FB95D1E7AD0420081B4AC /* FFTHomeAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTHomeAnnotation.m; sourceTree = "<group>"; };
+		A2435FD91E7D0E17004724CD /* FFTHomeAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTHomeAnnotationView.h; sourceTree = "<group>"; };
+		A2435FDA1E7D0E17004724CD /* FFTHomeAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTHomeAnnotationView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A23FB9291E7AB07A0081B4AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23FB95A1E7ACDD80081B4AC /* CoreLocation.framework in Frameworks */,
+				A23FB9541E7AB2F20081B4AC /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A20C3BBA1E7BCEBB001BBDE9 /* Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				A20C3BBB1E7BCF35001BBDE9 /* FFTMapOverlay.h */,
+				A20C3BBC1E7BCF35001BBDE9 /* FFTMapOverlay.m */,
+				A20C3BBE1E7BCF59001BBDE9 /* FFTMapOverlayRenderer.h */,
+				A20C3BBF1E7BCF59001BBDE9 /* FFTMapOverlayRenderer.m */,
+			);
+			path = Overlays;
+			sourceTree = "<group>";
+		};
+		A20C3BC11E7BD1EC001BBDE9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A20C3BC21E7BD206001BBDE9 /* FFTConstants.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A23FB9231E7AB07A0081B4AC = {
+			isa = PBXGroup;
+			children = (
+				A23FB9521E7AB2F20081B4AC /* Frameworks */,
+				A23FB92E1E7AB07A0081B4AC /* FreeFlightTest */,
+				A23FB92D1E7AB07A0081B4AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A23FB92D1E7AB07A0081B4AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A23FB92C1E7AB07A0081B4AC /* FreeFlightTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A23FB92E1E7AB07A0081B4AC /* FreeFlightTest */ = {
+			isa = PBXGroup;
+			children = (
+				A23FB9461E7AB0B70081B4AC /* Classes */,
+				A23FB9471E7AB0BE0081B4AC /* Resources */,
+				A23FB92F1E7AB07A0081B4AC /* Supporting Files */,
+				A23FB93D1E7AB07A0081B4AC /* LaunchScreen.storyboard */,
+				A23FB9381E7AB07A0081B4AC /* Main.storyboard */,
+			);
+			path = FreeFlightTest;
+			sourceTree = "<group>";
+		};
+		A23FB92F1E7AB07A0081B4AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A23FB9401E7AB07A0081B4AC /* Info.plist */,
+				A23FB9301E7AB07A0081B4AC /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A23FB9461E7AB0B70081B4AC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A23FB9481E7AB0DC0081B4AC /* Application */,
+				A20C3BC11E7BD1EC001BBDE9 /* Helpers */,
+				A23FB9681E7B28BD0081B4AC /* Models */,
+				A23FB9491E7AB1460081B4AC /* View Controllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A23FB9471E7AB0BE0081B4AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A23FB93B1E7AB07A0081B4AC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A23FB9481E7AB0DC0081B4AC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A23FB9321E7AB07A0081B4AC /* AppDelegate.h */,
+				A23FB9331E7AB07A0081B4AC /* AppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A23FB9491E7AB1460081B4AC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A23FB94A1E7AB1540081B4AC /* Base Controllers */,
+				A23FB94E1E7AB1940081B4AC /* Map Screens */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A23FB94A1E7AB1540081B4AC /* Base Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A23FB94B1E7AB1780081B4AC /* FFTBaseViewController.h */,
+				A23FB94C1E7AB1780081B4AC /* FFTBaseViewController.m */,
+			);
+			path = "Base Controllers";
+			sourceTree = "<group>";
+		};
+		A23FB94E1E7AB1940081B4AC /* Map Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A23FB94F1E7AB1AA0081B4AC /* FFTMapViewController.h */,
+				A23FB9501E7AB1AA0081B4AC /* FFTMapViewController.m */,
+			);
+			path = "Map Screens";
+			sourceTree = "<group>";
+		};
+		A23FB9521E7AB2F20081B4AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A23FB9591E7ACDD80081B4AC /* CoreLocation.framework */,
+				A23FB9531E7AB2F20081B4AC /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A23FB95B1E7AD01E0081B4AC /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				A23FB95C1E7AD0420081B4AC /* FFTHomeAnnotation.h */,
+				A23FB95D1E7AD0420081B4AC /* FFTHomeAnnotation.m */,
+				A2435FD91E7D0E17004724CD /* FFTHomeAnnotationView.h */,
+				A2435FDA1E7D0E17004724CD /* FFTHomeAnnotationView.m */,
+			);
+			path = Annotations;
+			sourceTree = "<group>";
+		};
+		A23FB9681E7B28BD0081B4AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A23FB95B1E7AD01E0081B4AC /* Annotations */,
+				A20C3BBA1E7BCEBB001BBDE9 /* Overlays */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A23FB92B1E7AB07A0081B4AC /* FreeFlightTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A23FB9431E7AB07A0081B4AC /* Build configuration list for PBXNativeTarget "FreeFlightTest" */;
+			buildPhases = (
+				A23FB9281E7AB07A0081B4AC /* Sources */,
+				A23FB9291E7AB07A0081B4AC /* Frameworks */,
+				A23FB92A1E7AB07A0081B4AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreeFlightTest;
+			productName = FreeFlightTest;
+			productReference = A23FB92C1E7AB07A0081B4AC /* FreeFlightTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A23FB9241E7AB07A0081B4AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FFT;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = OMGHaveFun;
+				TargetAttributes = {
+					A23FB92B1E7AB07A0081B4AC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L84MEYNYS7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A23FB9271E7AB07A0081B4AC /* Build configuration list for PBXProject "FreeFlightTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A23FB9231E7AB07A0081B4AC;
+			productRefGroup = A23FB92D1E7AB07A0081B4AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A23FB92B1E7AB07A0081B4AC /* FreeFlightTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A23FB92A1E7AB07A0081B4AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23FB93F1E7AB07A0081B4AC /* LaunchScreen.storyboard in Resources */,
+				A23FB93C1E7AB07A0081B4AC /* Assets.xcassets in Resources */,
+				A23FB93A1E7AB07A0081B4AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A23FB9281E7AB07A0081B4AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23FB95E1E7AD0420081B4AC /* FFTHomeAnnotation.m in Sources */,
+				A2435FDB1E7D0E17004724CD /* FFTHomeAnnotationView.m in Sources */,
+				A23FB9341E7AB07A0081B4AC /* AppDelegate.m in Sources */,
+				A20C3BBD1E7BCF35001BBDE9 /* FFTMapOverlay.m in Sources */,
+				A23FB94D1E7AB1780081B4AC /* FFTBaseViewController.m in Sources */,
+				A23FB9511E7AB1AA0081B4AC /* FFTMapViewController.m in Sources */,
+				A20C3BC01E7BCF59001BBDE9 /* FFTMapOverlayRenderer.m in Sources */,
+				A23FB9311E7AB07A0081B4AC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A23FB9381E7AB07A0081B4AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A23FB9391E7AB07A0081B4AC /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		A23FB93D1E7AB07A0081B4AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A23FB93E1E7AB07A0081B4AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A23FB9411E7AB07A0081B4AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A23FB9421E7AB07A0081B4AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A23FB9441E7AB07A0081B4AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L84MEYNYS7;
+				INFOPLIST_FILE = "FreeFlightTest/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omghavefun.FreeFlightTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A23FB9451E7AB07A0081B4AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L84MEYNYS7;
+				INFOPLIST_FILE = "FreeFlightTest/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omghavefun.FreeFlightTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A23FB9271E7AB07A0081B4AC /* Build configuration list for PBXProject "FreeFlightTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23FB9411E7AB07A0081B4AC /* Debug */,
+				A23FB9421E7AB07A0081B4AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A23FB9431E7AB07A0081B4AC /* Build configuration list for PBXNativeTarget "FreeFlightTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23FB9441E7AB07A0081B4AC /* Debug */,
+				A23FB9451E7AB07A0081B4AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A23FB9241E7AB07A0081B4AC /* Project object */;
+}

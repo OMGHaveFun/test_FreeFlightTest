@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FFTMapViewController" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="FFTMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" showsPointsOfInterest="NO" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dKk-ff-pjp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wSs-rD-zDi"/>
+                                </connections>
+                            </mapView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="100" maxValue="2000" translatesAutoresizingMaskIntoConstraints="NO" id="Hd4-PI-Yh7">
+                                <rect key="frame" x="38" y="617" width="299" height="31"/>
+                                <connections>
+                                    <action selector="invertCircleRadiusSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="x0X-mU-0bx"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dKk-ff-pjp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4tf-gd-rHZ"/>
+                            <constraint firstItem="Hd4-PI-Yh7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="E6Q-Ph-mgt"/>
+                            <constraint firstAttribute="trailing" secondItem="Hd4-PI-Yh7" secondAttribute="trailing" constant="40" id="ELp-ZS-tHE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dKk-ff-pjp" secondAttribute="bottom" id="TV2-fm-eoO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hd4-PI-Yh7" secondAttribute="bottom" constant="20" id="p9h-el-vPg"/>
+                            <constraint firstItem="dKk-ff-pjp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tby-5H-T5m"/>
+                            <constraint firstAttribute="trailing" secondItem="dKk-ff-pjp" secondAttribute="trailing" id="y3O-4d-zQH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="invertCircleRadiusSlider" destination="Hd4-PI-Yh7" id="KQT-op-Stk"/>
+                        <outlet property="mapView" destination="dKk-ff-pjp" id="hMa-Fx-wGR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
